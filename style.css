@@ -62,7 +62,7 @@ a:hover {
     clear: both;
     background-color: white;
     position: relative;
-    max-width: 60%;
+    max-width: 960px;
     min-height: 960px;
     z-index: 1;
     color: rgb(43, 42, 42);
@@ -73,20 +73,49 @@ a:hover {
     border-bottom: gray solid 3px;
 }
 
-.foot {
+footer {
     background-color: gray;
     position: relative;
-    height: 75px;
+    padding: 20px;
     width: 100%;
     text-align: center;
     color: white;
-    font-size: 300%;
+    font-size: 200%;
+    border-top: teal 5px Solid;
 }
 
 .pic{
-    width: 200;
-    height: 200;
     float: left;
+    margin: 30px;
 }
 
+img{
+    width: 200px;
+    height: 200px;
+}
 
+.pic.caption{
+    width: 200px;
+    height: 35px;
+    position: relative;
+    /* z-index: 1; */
+    color: white;
+    background-color: teal;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 1px 20px;
+    margin: 5%;
+    box-sizing: border-box;
+    border: solid grey;
+}
+
+ins[type=text]:focus{
+    background-color: lightslategray;
+}
