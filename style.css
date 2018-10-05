@@ -63,7 +63,6 @@ a:hover {
     background-color: white;
     position: relative;
     max-width: 960px;
-    min-height: 960px;
     z-index: 1;
     color: rgb(43, 42, 42);
 }
@@ -87,21 +86,23 @@ footer {
 .pic{
     float: left;
     margin: 30px;
+    position: relative;
 }
 
 img{
     width: 200px;
     height: 200px;
+    position: relative;
 }
 
-.pic.caption{
+.caption{
     width: 200px;
     height: 35px;
     position: relative;
     /* z-index: 1; */
     color: white;
     background-color: teal;
-    bottom: 50%;
+    bottom: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 150%;
@@ -111,11 +112,39 @@ img{
 input[type=text] {
     width: 100%;
     padding: 1px 20px;
-    margin: 5%;
+    margin-bottom: 20px;
     box-sizing: border-box;
     border: solid grey;
+    border-radius: 3px;
 }
 
-ins[type=text]:focus{
-    background-color: lightslategray;
+input[type=text]:focus{
+    background-color: teal;
+}
+
+input[type=text] .big {
+    min-height: 300px;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    font-size: 120%;
+    width: auto;
+    position: relative;
+    float: left;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: rgb(1, 219, 219);
+
+}
+
+label {
+    top: 5px;
+}
+
+.clearfix {
+    overflow: auto;
 }
