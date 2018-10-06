@@ -31,7 +31,7 @@ h1 {
     align-content: center;
     left: 10%;
     padding: 15px;
-    height: 60px;
+    height: 58px;
     margin: 0px;
     border-bottom: 1px solid #cccccc;
     position: fixed; 
@@ -46,17 +46,19 @@ h1 {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-a {
+.menu {
     color:#777777;
     text-decoration: none;
 }
 
-a:hover {
+.menu:hover {
   color: teal;
   text-decoration: underline;
 }
 
-
+a:link {
+    text-decoration: none;
+}
 .title {
     font-family: 'Georgia', Times, serif;
     color: teal;
@@ -108,19 +110,22 @@ img{
 }
 
 
-
 .caption{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     width: 200px;
     height: 35px;
     position: relative;
-    color: white;
     background-color: teal;
     bottom: 40px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 150%;
     text-align: center;
+}
+
+span{
+    color: white;
+    text-decoration: none;
 }
 
 input[type=text] {
@@ -162,3 +167,13 @@ label {
 .clearfix {
     overflow: auto;
 }
+
+.large {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 50px;
+    color: teal;
+    text-align: center;
+    padding: 60px;
+
+}
+
