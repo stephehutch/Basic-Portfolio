@@ -1,7 +1,7 @@
 
 header{
     background-color: white;
-    border-bottom: gray 1px solid;
+    border-bottom: #777777 1px solid;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -14,37 +14,40 @@ header{
 
 .background {
     margin: 0%;
-    margin-top: 0px;
+    /*margin-top: 0px;
     margin-right: 0px;
-    background-image:url("background.jpg");
-    background-size: cover;
-    height: 1300px;
-    position: relative;
+     position: relative;
     z-index: 1;
+    background-size: cover;*/
+    background-image:url("background.jpg");
+    height: 1300px;
+   
 }
 
 h1 {
-    background-color: rgb(15, 131, 131);
+    background-color: teal;
     float: left;
-    color: white;
+    color: #ffffff;
     align-content: center;
     left: 10%;
     padding: 15px;
     height: 60px;
     margin: 0px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #cccccc;
     position: fixed; 
     z-index: 2;
+    font-family: 'Georgia', Times, serif;
 }
 
 .links {
     float: right;
     font-size: 130%;
     margin-right: 15%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 a {
-    color: rgb(68, 60, 60);
+    color:#777777;
     text-decoration: none;
 }
 
@@ -53,32 +56,37 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.title {
+    font-family: 'Georgia', Times, serif;
+    color: teal;
+    border-bottom: #777777 3px solid;
+}
+
+
 .content { 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     bottom: 150px;
     top: 150px;
     padding: 50px;
     margin: auto;
     clear: both;
-    background-color: white;
+    background-color: #ffffff;
     position: relative;
     max-width: 960px;
     z-index: 1;
     color: rgb(43, 42, 42);
-}
-
-.title {
-    color: teal;
-    border-bottom: gray solid 3px;
+    border-color: #dddddd;
 }
 
 footer {
-    background-color: gray;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #666666;
     position: relative;
     padding: 20px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #ffffff;
     font-size: 200%;
     border-top: teal 5px Solid;
 }
@@ -89,17 +97,23 @@ footer {
     position: relative;
 }
 
+.pic:hover{
+    opacity: .5;
+}
+
 img{
     width: 200px;
     height: 200px;
     position: relative;
 }
 
+
+
 .caption{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     width: 200px;
     height: 35px;
     position: relative;
-    /* z-index: 1; */
     color: white;
     background-color: teal;
     bottom: 40px;
@@ -110,6 +124,7 @@ img{
 }
 
 input[type=text] {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     width: 100%;
     padding: 1px 20px;
     margin-bottom: 20px;
@@ -119,14 +134,13 @@ input[type=text] {
 }
 
 input[type=text]:focus{
+    
     background-color: teal;
 }
 
-input[type=text] .big {
-    min-height: 300px;
-}
 
 button {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-color: teal;
     color: white;
     font-size: 120%;
